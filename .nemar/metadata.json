@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BCIT Baseline Driving",
-  "description": "The BCIT Baseline Driving dataset comprises extended time-on-task EEG recordings collected during a 60-minute simulated driving task designed to assess fatigue-related biomarkers and performance degradation. Data were acquired from three sites using identical driving simulator setups with 64- or 256-channel Biosemi EEG systems, capturing neural correlates of driver fatigue through continuous performance monitoring and objective behavioral measures. This dataset serves as a foundational resource for investigating predictive algorithms of driver fatigue and fatigue-related EEG biomarkers in a controlled experimental environment.",
-  "methods_description": "Subjects performed a 60-minute baseline driving task in a simulated environment organized into 6 blocks of 10 minutes each, with responsibility for both speed and steering control. EEG was recorded using BioSemi systems (64-channel at sites T1 and T2; 256-channel at site T3) at 1024 Hz sampling rate. Lateral perturbations were applied to the vehicle, requiring corrective steering actions. Dependent variables included reaction times to perturbations, continuous vehicle performance metrics (steering wheel angle, lane position, heading error), and subjective fatigue scales (TIFS, KSS, VAS-F). Data were collected at three sites: Army Research Laboratory (Aberdeen, MD), Teledyne Corporation (Durham, NC), and SAIC (Louisville, CO).",
+  "description": "The BCIT Baseline Driving dataset comprises extended time-on-task EEG recordings from subjects performing a 60-minute simulated driving task across three research sites. Designed to assess fatigue-related performance degradation through novel EEG biomarkers, the study collected high-density EEG data (64 or 256 channels) synchronized with objective driving performance metrics including steering corrections, lane position, and reaction times to vehicle perturbations. This dataset serves as a foundational resource for investigating the neurophysiological correlates of driver fatigue and developing predictive algorithms for fatigue detection.",
+  "methods_description": "Subjects performed a 60-minute baseline driving task in a high-fidelity driving simulator (Real Time Technologies) organized into 6 blocks of 10 minutes each, with responsibility for both speed and steering control. EEG was recorded using BioSemi systems (64 channels at sites T1 and T2; 256 channels at site T3) at 1024 Hz sampling rate. Driving performance data were logged at 100 Hz. Lateral perturbations were applied to the vehicle to elicit corrective steering responses. Subjective fatigue was assessed using the Task-Induced Fatigue Scale (TIFS), Karolinska Sleepiness Scale (KSS), and Visual Analog Scale of Fatigue (VAS-F). Data were collected at three sites: Army Research Laboratory (Aberdeen, MD), Teledyne Corporation (Durham, NC), and Science Applications International Corporation (Louisville, CO).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -24,7 +24,7 @@
       "term": "driver fatigue"
     },
     {
-      "term": "driving simulation"
+      "term": "simulated driving"
     },
     {
       "term": "time-on-task"
@@ -33,10 +33,22 @@
       "term": "biomarkers"
     },
     {
-      "term": "performance degradation"
+      "term": "motor control"
     },
     {
-      "term": "motor control"
+      "term": "vigilance"
+    },
+    {
+      "term": "driving simulator"
+    },
+    {
+      "term": "BioSemi"
+    },
+    {
+      "term": "steering control"
+    },
+    {
+      "term": "lane position"
     }
   ],
   "related_identifiers": [
