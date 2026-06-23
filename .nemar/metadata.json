@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on004120",
-  "source": "openneuro",
-  "source_id": "ds004120",
+  "pipeline_stage": "enriched",
   "title": "BCIT Baseline Driving",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Jonathan Touryan (data and curation)": {},
     "Greg Apker (data)": {},
@@ -14,26 +14,150 @@
     "Tony Johnson (curation)": {},
     "Kay Robbins (curation)": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004120.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.3389/fnins.2014.00155.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1016/j.physbeh.2015.05.026.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1080/00222895.2014.959887, 10.1080/00222895.2014.959887.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2017.02.057.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2019.116361.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2019.116054.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004120",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004120",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.3389/fnins.2014.00155",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1016/j.physbeh.2015.05.026",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.1080/00222895.2014.959887",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2017.02.057",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2019.116361",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2019.116054",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "This research was sponsored by the Army Research Laboratory and was accomplished under Cooperative Agreement Number W911NF-10-0-0002."
+      "funder_name": "Army Research Laboratory",
+      "award_number": "W911NF-10-0-0002"
     }
-  ]
+  ],
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".ipynb",
+    ".json",
+    ".md",
+    ".set",
+    ".tsv",
+    ".txt",
+    ".xlsx"
+  ],
+  "description": "The BCIT Baseline Driving dataset comprises extended time-on-task EEG recordings from subjects performing a 60-minute simulated driving task designed to assess fatigue-related biomarkers. Collected across three sites (Army Research Laboratory in Aberdeen MD, Teledyne Corporation in Durham NC, and Science Applications International Corporation in Louisville CO) using identical driving simulator setups with 64- or 256-channel Biosemi EEG systems, the dataset includes continuous performance metrics, steering corrections in response to lateral vehicle perturbations, and behavioral measures of fatigue. This resource enables investigation of endogenous changes in task performance and the development of predictive algorithms for driver fatigue detection.",
+  "methods_description": "Subjects performed a 60-minute baseline driving task in a high-fidelity driving simulator (Real Time Technologies) organized into 6 blocks of 10 minutes each, with responsibility for both speed and steering control. The vehicle was subjected to periodic lateral perturbations requiring corrective steering actions. EEG was recorded using BioSemi systems (64 channels at sites T1 and T2; 256 channels at site T3) at 1024 Hz sampling rate. Vehicle data were logged at 100 Hz. Dependent variables included reaction times to perturbations, continuous performance metrics (steering wheel angle, lane position, heading error), and subjective fatigue scales (TIFS, KSS, VAS-F). At site T2, visual complexity and perturbation frequency were manipulated as independent variables.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "driver fatigue"
+    },
+    {
+      "term": "fatigue"
+    },
+    {
+      "term": "simulated driving"
+    },
+    {
+      "term": "driving simulator"
+    },
+    {
+      "term": "time-on-task"
+    },
+    {
+      "term": "biomarkers"
+    },
+    {
+      "term": "motor control"
+    },
+    {
+      "term": "performance degradation"
+    },
+    {
+      "term": "perturbation"
+    },
+    {
+      "term": "BioSemi"
+    },
+    {
+      "term": "lateral perturbations"
+    },
+    {
+      "term": "task-induced fatigue scale"
+    },
+    {
+      "term": "Karolinska Sleepiness Scale"
+    }
+  ],
+  "source_hash": "bf6408715e60f6efdf51a7a93489443da152e13e22b8989b1b841131c631a662"
 }
