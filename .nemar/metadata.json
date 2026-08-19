@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BCIT Baseline Driving",
-  "description": "The BCIT Baseline Driving dataset comprises extended time-on-task EEG recordings from subjects performing a 60-minute simulated driving task across three research sites. Designed to assess fatigue-related performance degradation through novel EEG biomarkers, the study collected high-density EEG data (64 or 256 channels) synchronized with objective driving performance metrics including steering corrections, lane position, and reaction times to vehicle perturbations. This dataset serves as a foundational resource for investigating the neurophysiological correlates of driver fatigue and developing predictive algorithms for fatigue detection.",
-  "methods_description": "Subjects performed a 60-minute baseline driving task in a high-fidelity driving simulator (Real Time Technologies) organized into 6 blocks of 10 minutes each, with responsibility for both speed and steering control. EEG was recorded using BioSemi systems (64 channels at sites T1 and T2; 256 channels at site T3) at 1024 Hz sampling rate. Driving performance data were logged at 100 Hz. Lateral perturbations were applied to the vehicle to elicit corrective steering responses. Subjective fatigue was assessed using the Task-Induced Fatigue Scale (TIFS), Karolinska Sleepiness Scale (KSS), and Visual Analog Scale of Fatigue (VAS-F). Data were collected at three sites: Army Research Laboratory (Aberdeen, MD), Teledyne Corporation (Durham, NC), and Science Applications International Corporation (Louisville, CO).",
+  "description": "This dataset contains EEG and driving performance data from the Baseline Driving study, part of the BCIT program investigating fatigue-related biomarkers during simulated driving tasks. Subjects performed a 60-minute driving task with EEG recorded at three different sites using varying channel configurations (64 or 256-channel Biosemi systems). The dataset supports research into predictive algorithms for detecting driver fatigue through EEG analysis and objective performance measures.",
+  "methods_description": "Subjects performed a driving task using a simulator with steering wheel and pedal controls, and EEG data was recorded using BioSemi systems with up to 256 channels at a sampling rate of 1024 Hz. Eye tracking data were collected but not included in the dataset. The Baseline Driving task consisted of 60 minutes of driving in 6 blocks, during which subjects controlled speed and steering while responding to lateral perturbations.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,34 +21,23 @@
       "term": "EEG"
     },
     {
-      "term": "driver fatigue"
+      "term": "driving simulation"
     },
     {
-      "term": "simulated driving"
+      "term": "Fatigue",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005221"
     },
     {
-      "term": "time-on-task"
+      "term": "Biomarkers",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015415"
     },
     {
-      "term": "biomarkers"
+      "term": "cognitive performance"
     },
     {
-      "term": "motor control"
-    },
-    {
-      "term": "vigilance"
-    },
-    {
-      "term": "driving simulator"
-    },
-    {
-      "term": "BioSemi"
-    },
-    {
-      "term": "steering control"
-    },
-    {
-      "term": "lane position"
+      "term": "task-induced fatigue"
     }
   ],
   "related_identifiers": [
@@ -88,11 +77,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004120",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.3389/fnins.2014.00155",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
@@ -126,6 +110,11 @@
       "identifier": "10.18112/openneuro.ds004120.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004120",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
