@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "BCIT Baseline Driving",
-  "description": "This dataset contains EEG and driving performance data from the Baseline Driving study, part of the BCIT program investigating fatigue-related biomarkers during simulated driving tasks. Subjects performed a 60-minute driving task with EEG recorded at three different sites using varying channel configurations (64 or 256-channel Biosemi systems). The dataset supports research into predictive algorithms for detecting driver fatigue through EEG analysis and objective performance measures.",
-  "methods_description": "Subjects performed a driving task using a simulator with steering wheel and pedal controls, and EEG data was recorded using BioSemi systems with up to 256 channels at a sampling rate of 1024 Hz. Eye tracking data were collected but not included in the dataset. The Baseline Driving task consisted of 60 minutes of driving in 6 blocks, during which subjects controlled speed and steering while responding to lateral perturbations.",
+  "description": "EEG recordings from a simulated driving study designed to assess fatigue-related changes in performance through EEG biomarkers. Participants completed a 60-minute driving task (six 10-minute blocks) with steering and speed control and periodic lateral perturbations. Data were collected at three sites (ARL, Teledyne, SAIC) using 64- or 256-channel BioSemi EEG systems. The dataset is part of the BCIT program and is a companion to the Calibration Driving session.",
+  "methods_description": "Participants completed a practice session, then a 15-minute Calibration Driving task, followed by 60 minutes of Baseline Driving in a driving simulator with steering wheel and pedals. EEG was recorded with BioSemi 64- or 256-channel systems (plus eye and mastoid channels) at 1024 Hz, and vehicle logs were sampled at 100 Hz. Lateral perturbations required corrective steering. Questionnaires (KSS, TIFS, VAS-F) were also collected.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,30 +21,26 @@
       "term": "EEG"
     },
     {
-      "term": "driving simulation"
+      "term": "driving simulator"
     },
     {
-      "term": "Fatigue",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005221"
+      "term": "fatigue"
     },
     {
-      "term": "Biomarkers",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D015415"
+      "term": "time-on-task"
     },
     {
-      "term": "cognitive performance"
+      "term": "driver performance"
     },
     {
-      "term": "task-induced fatigue"
+      "term": "steering perturbation"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.3389/fnins.2014.00155.",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "10.1016/j.physbeh.2015.05.026.",
@@ -128,7 +124,7 @@
     "eeg"
   ],
   "sizes": [
-    "324.8 GB (156 files)"
+    "302 GB (156 files)"
   ],
   "formats": [
     ".ipynb",
